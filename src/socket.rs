@@ -794,6 +794,7 @@ fn set_common_flags(socket: Socket) -> io::Result<Socket> {
             target_os = "openbsd",
             target_os = "espidf",
             target_os = "vita",
+            target_os = "switch",
         ))
     ))]
     socket._set_cloexec(true)?;
@@ -2050,6 +2051,7 @@ impl Socket {
             target_os = "illumos",
             target_os = "ios",
             target_os = "visionos",
+            target_os = "switch",
             target_os = "linux",
             target_os = "macos",
             target_os = "netbsd",
@@ -2069,6 +2071,7 @@ impl Socket {
                 target_os = "illumos",
                 target_os = "ios",
                 target_os = "visionos",
+                target_os = "switch",
                 target_os = "linux",
                 target_os = "macos",
                 target_os = "netbsd",
@@ -2099,6 +2102,7 @@ impl Socket {
             target_os = "illumos",
             target_os = "ios",
             target_os = "visionos",
+            target_os = "switch",
             target_os = "linux",
             target_os = "macos",
             target_os = "netbsd",
@@ -2118,6 +2122,7 @@ impl Socket {
                 target_os = "illumos",
                 target_os = "ios",
                 target_os = "visionos",
+                target_os = "switch",
                 target_os = "linux",
                 target_os = "macos",
                 target_os = "netbsd",
