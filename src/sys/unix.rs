@@ -33,6 +33,7 @@ use std::num::NonZeroU32;
         target_os = "freebsd",
         target_os = "ios",
         target_os = "visionos",
+        target_os = "switch",
         target_os = "linux",
         target_os = "macos",
         target_os = "tvos",
@@ -49,6 +50,7 @@ use std::os::unix::ffi::OsStrExt;
         target_os = "freebsd",
         target_os = "ios",
         target_os = "visionos",
+        target_os = "switch",
         target_os = "linux",
         target_os = "macos",
         target_os = "tvos",
@@ -134,6 +136,7 @@ pub(crate) use libc::ipv6_mreq as Ipv6Mreq;
     target_os = "haiku",
     target_os = "espidf",
     target_os = "vita",
+    target_os = "switch",
 )))]
 pub(crate) use libc::IPV6_RECVTCLASS;
 #[cfg(all(feature = "all", not(any(target_os = "redox", target_os = "espidf"))))]
@@ -152,6 +155,7 @@ pub(crate) use libc::IP_HDRINCL;
     target_os = "nto",
     target_os = "espidf",
     target_os = "vita",
+    target_os = "switch",
 )))]
 pub(crate) use libc::IP_RECVTOS;
 #[cfg(not(any(
@@ -198,6 +202,8 @@ pub(crate) use libc::{
     target_os = "nto",
     target_os = "espidf",
     target_os = "vita",
+    
+            target_os = "switch",
 )))]
 pub(crate) use libc::{
     ip_mreq_source as IpMreqSource, IP_ADD_SOURCE_MEMBERSHIP, IP_DROP_SOURCE_MEMBERSHIP,
@@ -209,6 +215,7 @@ pub(crate) use libc::{
     target_os = "illumos",
     target_os = "ios",
     target_os = "visionos",
+    target_os = "switch",
     target_os = "macos",
     target_os = "netbsd",
     target_os = "nto",
@@ -276,6 +283,8 @@ use libc::TCP_KEEPALIVE as KEEPALIVE_TIME;
     target_os = "tvos",
     target_os = "watchos",
     target_os = "vita",
+    
+            target_os = "switch",
 )))]
 use libc::TCP_KEEPIDLE as KEEPALIVE_TIME;
 
@@ -362,6 +371,8 @@ type IovLen = usize;
     target_os = "watchos",
     target_os = "espidf",
     target_os = "vita",
+    
+            target_os = "switch",
 ))]
 type IovLen = c_int;
 
